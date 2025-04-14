@@ -12,23 +12,22 @@ This project analyzes NBA player statistics with a focus on salary distribution 
    1. Name, Team, Number, Position
    2. Age, Height, Weight
    3. College, Salary
-4. Missing Values: 11 salary entries
+4. Missing Values:
+   1. 11 salary entries
+   2. 84 college entries
 
 # Preprocessing Steps
 
 1. Height Standardization:
    1. Replaced inconsistent height values with random integers between 150-180 cm
-   2. Added derived height in feet for better interpretability
 
 2. Salary Imputation:
    1. Identified 11 missing salary values
    2. Replaced nulls with median salary ($5,837,145)
-   3. Preserved original distribution by using median (robust to outliers)
 
 3. Data Cleaning:
    1. Removed irrelevant 'College' column
-   2. Converted age to integer type
-   3. Verified no remaining null values after processing
+   2. Verified no remaining null values after processing
 
 # Analysis Tasks
 
